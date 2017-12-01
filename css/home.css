@@ -7,9 +7,12 @@ body {
 }
 
 #caja-1{
-	padding: 122px 0px;
+	margin-top: 78px;	 
+	padding: 100px 0px;
 }
-
+.not-allowed{
+cursor:not-allowed;
+}
 
 header > div{
 	height: 50px; 	
@@ -33,12 +36,23 @@ li a{
     text-decoration: none;
 }
 
+li a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+
 li a:hover:not(.active) {
-    background-color: #111;
+    background-color: rgba(17, 17, 17, 0.8);
+}
+
+.hover{
+	background-color: rgba(17, 17, 17, 0.5);
 }
 
 .active {
     background-color: #4CAF50;
+    color: white;
 }
 
 h1{
@@ -50,6 +64,33 @@ h1{
     text-align: right;
     font-style: oblique;
 }
+
+#no-disponible{
+	color: white;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    width: 200px;
+    border: solid 1px lawngreen;
+    padding: 20px;
+    background-color: rgba(15,15,15,0.9);
+    display: none;
+}
+#yariela{
+	color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 150px;
+    border: solid 1px lawngreen;
+    background-color: rgba(15,15,15,0.9);
+    font-size: 22px;
+    font-weight: bold;
+    padding: 25px;
+        display: none;
+
+}
+
 
 
 
