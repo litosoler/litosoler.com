@@ -1,0 +1,79 @@
+body { 
+	background: url(../img/fondoG.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#caja-1{
+	padding: 122px 0px;
+}
+
+
+header > div{
+	height: 50px; 	
+}
+
+ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+	float: left;
+}
+
+li a{
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+h1{
+	font-family: 'Shrikhand', cursive;
+	font-size: 60px;
+}
+#job{
+    font-size: 20px;
+    text-align: right;
+    font-style: oblique;
+}
+
+
+
+@media (max-width: 460px) {
+	body { 
+		background: url(../img/fondoP.png) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	h1{
+		font-size: 38px;
+	}
+	#job{
+	font-size: 14px;
+    text-align: right;
+    font-style: oblique;
+	}
+}
+
+
+
+
+
+

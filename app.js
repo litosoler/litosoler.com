@@ -8,7 +8,8 @@
 
 
 //funciones de accion
-
 $(function(){
 	$("#mensaje").css("margin-top", ($(window).height() / 2) - 100);
 });
+
+$("header").hover(alert());
