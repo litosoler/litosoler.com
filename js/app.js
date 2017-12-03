@@ -54,7 +54,7 @@ $(function(){
 	if ($(window).width() <= 460){
 		renderNavBar(navBarP);
 	}else{
-		renderNavBar(navBarP);
+		renderNavBar(navBarG);
 	}
 });
 
@@ -106,6 +106,6 @@ $(window).resize(function() {
 	if ($(window).width() <= 460){
 		renderNavBar(navbarP);
 	}else{
-		renderNavBar(navBarP);
+		renderNavBar(navBarG);
 	}
 });
