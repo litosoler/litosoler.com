@@ -49,7 +49,7 @@ function renderNavBar(navbar){
 
 //funciones de accion
 $(function(){
-	$("#mensaje").css("margin-top", ($(window).height() / 2) - 100);
+	$("#fondo").css("margin-top", ($(window).height()-$("#fondo").innerHeight() - 10)/ 2);
 	
 	if ($(window).width() <= 460){
 		renderNavBar(navBarP);
@@ -103,6 +103,7 @@ $("header").on({
 
 
 $(window).resize(function() {
+	$("#fondo").css("margin-top", ($(window).height()-$("#fondo").innerHeight() - 10)/ 2);
 	if ($(window).width() <= 460){
 		renderNavBar(navbarP);
 	}else{
