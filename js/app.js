@@ -50,12 +50,18 @@ function renderNavBar(navbar){
 //funciones de accion
 $(function(){
 	$("#fondo").css("margin-top", ($(window).height()-$("#fondo").innerHeight() - 10)/ 2);
-	
+	$('body').hide();
+
 	if ($(window).width() <= 460){
 		renderNavBar(navBarP);
 	}else{
 		renderNavBar(navBarG);
 	}
+	// start up after 2sec no matter what
+    setTimeout(function(){
+    	$('html').removeClass("loading");
+    	$("body").show(600);
+    },1000);
 });
 
 $("header").hover(function(){
