@@ -1,12 +1,17 @@
 #mensaje{
 	margin: auto;
-    font-size: -webkit-xxx-large;
+    font-size: 4vw;
     font-weight: bold;
     width: 60%;
     background-color: rgba(14, 14, 14, 0.4);
     color: white;
     padding: 61px;
     border-radius: 24px;
+    /*evita que se seleccione el texto*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
 }
 #fondo{
 	margin: 0px auto 0px auto;
@@ -26,16 +31,7 @@
 }
 
 @media (max-width: 650px) {
- #mensaje{
-    margin: auto;
-    font-size: xx-large;
-    font-weight: bold;
-    width: 60%;
-    background-color: rgba(14, 14, 14, 0.4);
-    color: white;
-    padding: 61px;
-    border-radius: 24px;
-}
+
 #fondo{
     margin: 0px auto 0px auto;
     padding: 160px 0px;

@@ -1,5 +1,5 @@
 //funciones de accion
-
+autoMargin();
 $(window).resize(function() {
 	autoMargin();
 });
