@@ -11,7 +11,6 @@ function AumentarHomeClicks(estado){
 
 //funciones de accion
 $(function(){
-	$('body').hide();
 	// start up after 2sec no matter what
     setTimeout(function(){
     	$('html').removeClass("loading");

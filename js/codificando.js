@@ -1,5 +1,6 @@
 //funciones de accion
 autoMargin();
+$('body').hide();
 $(window).resize(function() {
 	autoMargin();
 });
