@@ -1,2 +1,3 @@
 Celurean	rgba(86, 177, 191, 0.8) #56b1bf
 teal 		rgba(8, 112, 138, 0.8)	#08708a
+stone Wash	rgba(208, 211, 197, 0.7)	#D0D3C5
