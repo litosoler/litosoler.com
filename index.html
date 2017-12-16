@@ -10,22 +10,24 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <!-- personalizadas -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
 <body>
-  <!-- navBar -->
-   <!-- capa cuando se abre el side bar en pantallas pequeñas -->
-  <div class="capa" onclick="cerrar()" title="close side menu" id="capa"></div>
-  <!-- sideBar/navBar-grande -->
-  <nav id="navBarG" class="container sideBar">
-    <ul>
-      <li><img src="img/logo.png"><img id="close-icon" src="img/glyphicons-198-remove-circle.png" class="hidden-sm-up" onclick="cerrar()" ></li>
-      <li><a class="active" href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">CV<img src="img/glyphicons-213-arrow-down.png"></a></li>
-    </ul>
-  </nav>
+  <header class=" bg bg-img">
+    <!-- navBar -->
+    <!-- capa cuando se abre el side bar en pantallas pequeñas -->
+    <div class="capa" onclick="cerrar()" title="close side menu" id="capa"></div>
+    <!-- sideBar/navBar-grande -->
+    <nav id="navBarG" class="container sideBar">
+      <ul>
+        <li><img src="img/logo.png"><img id="close-icon" src="img/glyphicons-198-remove-circle.png" class="hidden-sm-up" onclick="cerrar()" ></li>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">CV<img src="img/glyphicons-213-arrow-down.png"></a></li>
+      </ul>
+    </nav>
     <!-- navBar en pantallas pequeñas -->
     <nav id="navBarP" class="container-fluid hidden-sm-up">
      <ul>
@@ -34,13 +36,19 @@
     </ul>
   </nav>
 
+  <div id="saludo">
+    <p>Hola<span>!</span></p>
+    <p>Soy estudiante de <span>Ingieneria en Sistemas</span> en la Universidad Nacional Autonoma de Honduras.</p>
+  </div>
+</header>
 
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
