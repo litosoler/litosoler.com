@@ -1,8 +1,10 @@
 /*clases sin propocito especifico*/
 .white{
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 1);
     padding: 20px;
-    border-radius: 10px;	
+}
+.sombra{
+    box-shadow: 1px 1px 0 rgba(215,215,215,0.2), 0 7px 20px 0 rgba(0,0,0,0.19)
 }
 
 /*Esta parte hará la función de cargador mientras aparece el contenido*/
@@ -15,27 +17,27 @@
 }
 
 /*clases para el navBar	*/
-ul{
+header ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-li{
+header li{
     float: left;
 }
-li a{
+header li a{
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover, li a:focus{
+header li a:hover, li a:focus{
     text-decoration: none;
     color: white;
 }
-li a:hover:not(.active) {
+header li a:hover:not(.active) {
     background-color: rgba(86, 177, 191, 0.8);
 }
 
@@ -44,10 +46,10 @@ li a:hover:not(.active) {
     color: white;
 }
 #navBarG ul li:first-child{
-    background-color: rgba(208, 211, 197, 0.7);
+    background-color: rgba(215,215,215, 0.7);
     display: block;
 }
-li > img{
+header li > img{
     width: 100px;
     height: 70px;
 }

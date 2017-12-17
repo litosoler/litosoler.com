@@ -20,30 +20,73 @@ body, html{
 }
 
 #saludo > :first-child{
-    font-size: 10vw;
+    font-size: 9vw;
     margin-bottom: -20px;
 }
 
 #saludo span{
-    color: green;
+    color: rgba(215, 58, 49,1);
 }
-#saludo > :last-child{
+#saludo > :last-child {
     font-size: 4vw;
 }
 
+#about{
+    background-color: rgba(232, 227, 224,0.3);    
+    padding: 15px 0px 15px 0px;
+}
+
+#nombre{
+    background-color: rgba(86,177,191, 1);
+    height: 95px;
+    padding: 44px 0px 0px 14px;
+    margin: -20px -20px 15px -20px;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+#perfil ul{
+    margin: 0px 0px 0px -20px;
+}
+
+#about center {
+    margin-bottom: -10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.grupo{
+    margin-bottom: 15px;
+}
+.grupo p{
+    margin-bottom: 0px;
+}
+
+h5{
+    font-weight: bold;
+}
+#experiencia{
+    margin-bottom: 15px;
+}
+.progress-bar{
+        background-color: rgba(8,112 ,138, 0.9)
+}
+@media (max-width: 575px) {
+    #experiencia{
+        margin-top: 15px;
+    }
+}    
 @media (max-width: 800px) {
 
-#saludo > :first-child{
-    font-size: 13vw;
-    margin-bottom: -10px;
-}
+    #saludo > :first-child{
+        font-size: 13vw;
+        margin-bottom: -10px;
+    }
 
-#saludo span{
-    color: green;
-}
-#saludo > :last-child{
-    font-size: 5vw;
-}
+    #saludo > :last-child{
+        font-size: 5vw;
+    }
 }
 
 
