@@ -50,7 +50,7 @@
            <p id="nombre">Lito Soler</p>
             <div id="perfil">
            <ul>
-             <li>Estudiando Ing Sis</li>
+             <li>Estudiante de Ingienería en Sistemas</li>
              <li>Tegucigalpa, Honduras</li>
              <li>lito.soler1@gmail.com </li>
            </ul>
@@ -211,6 +211,16 @@ crossorigin="anonymous"></script>
     }
     contador++;
   }
+
+autoMargin();
+$('body').hide();
+$(window).resize(function() {
+  autoMargin();
+});
+
+function autoMargin(){
+$("#saludo").css("margin-top", ($(window).height()-$("#saludo").innerHeight() - 73)/ 2);
+}
 </script>
 </body>
 </html>

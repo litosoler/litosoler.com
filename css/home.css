@@ -3,20 +3,23 @@ body, html{
 }
 
 .bg-img{
-    background: url(../img/bg.jpg);
+    background: url(../img/bg4.jpg);
     height: 100%
 }
 
 .bg{
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #saludo{
+    padding: 20px;
     width: 70%;
     margin: auto;
+    background-color: rgba(215,215,215,0.7);
+    border-radius: 38px;
 }
 
 #saludo > :first-child{
@@ -25,7 +28,8 @@ body, html{
 }
 
 #saludo span{
-    color: rgba(215, 58, 49,1);
+    /*color: rgba(215, 58, 49,1);  */
+    color: green;
 }
 #saludo > :last-child {
     font-size: 4vw;
