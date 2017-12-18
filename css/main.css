@@ -7,6 +7,18 @@
     box-shadow: 1px 1px 0 rgba(215,215,215,0.2), 0 7px 20px 0 rgba(0,0,0,0.19)
 }
 
+.control{
+    display: inline-block;
+    width: 49.4%;
+}
+
+.block{
+    display: block;
+}
+.inline-block{
+    display: inline-block;
+}
+
 /*Esta parte hará la función de cargador mientras aparece el contenido*/
 .loading {
     background-image: url('../img/loading.gif');

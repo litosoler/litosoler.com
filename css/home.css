@@ -76,6 +76,21 @@ h5{
 .progress-bar{
         background-color: rgba(8,112 ,138, 0.9)
 }
+
+/*para la seccion de contactame*/
+#contact{
+        padding: 0px 0px 20px 0px;
+}
+
+.img-form{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/*tamaños pequeños*/
 @media (max-width: 575px) {
     #experiencia{
         margin-top: 15px;
