@@ -12,40 +12,45 @@
 
   <!-- personalizadas -->
   <link rel="stylesheet" type="text/css" href="css/navBar.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body>
-  <!-- capa cuando se abre el side bar en pantallas pequeñas -->
-  <div class="capa" onclick="cerrar()" title="close side menu" id="capa"></div>
-  <!-- sideBar/navBar-grande -->
-  <nav id="navBarG" class="container sideBar">
-    <ul>
-      <li><img src="img/logo.png"><img id="close-icon" src="img/glyphicons-198-remove-circle.png" class="hidden-sm-up" onclick="cerrar()" ></li>
-      <li><a class="active" href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">CV<img src="img/glyphicons-213-arrow-down.png"></a></li>
-    </ul>
-  </nav>
-    <!-- navBar en pantallas pequeñas -->
-    <nav id="navBarP" class="container-fluid hidden-sm-up">
-     <ul>
-      <li><img src="img/logo.png"></li>
-      <li class="float-right"><img id="icono-9" class="img-fluid" src="img/9.png" onclick="abrir()"></li>
-    </ul>
-  </nav>
+<body data-spy="scroll" data-target=".bg" data-offset="50">
+  <header class="bg bg-img">
+    <section id="navBar">
+      <!-- capa cuando se abre el side bar en pantallas pequeñas -->
+      <div class="capa" onclick="cerrar()" title="close side menu" id="capa"></div>
+      <!-- sideBar/navBar-grande -->
+      <nav id="navBarG" class="container sideBar">
+        <ul>
+          <li><img src="img/logo.png"><img id="close-icon" src="img/glyphicons-198-remove-circle.png" class="hidden-sm-up" onclick="cerrar()" ></li>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li class="float-right boton"><a id="cv" href="#">CV<img src="img/glyphicons-213-arrow-down.png"></a></li>
+        </ul>
+      </nav>
+      <!-- navBar en pantallas pequeñas -->
+      <nav id="navBarP" class="container-fluid hidden-sm-up">
+       <ul>
+        <li><img src="img/logo.png"></li>
+        <li class="float-right"><img id="icono-9" class="img-fluid" src="img/9.png" onclick="abrir()"></li>
+      </ul>
+    </nav>  
+  </section>
+</header>
 
-  <header class="bg bg-img"></header>
-  
-  <footer>
-    
-  </footer>
+<footer id="section1">
+
+</footer>
 
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/navBar.js"></script>

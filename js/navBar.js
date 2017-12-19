@@ -1,22 +1,28 @@
 function cerrar() {
 	$(".sideBar").hide();
 	$("#capa").hide();
-    // document.getElementById("mySidebar").style.display = "none";
-    // document.getElementById("myOverlay").style.display = "none";
 }
 
 function abrir(){
 	$("#capa").show();
 	$(".sideBar").show();
-	// document.getElementById("mySidebar").style.display = "block";
- //    document.getElementById("myOverlay").style.display = "block";
 }
 
 $("#navBarG").on("click", "li a",function(){
+	var id = $(this).attr('id');
+
+	if (!(id == "cv")){
 	$("li a").removeClass("active");
 	$(this).addClass("active");
+	}
+
+	
 });
 
+$("#cv").focusin(function(event) {
+	/* Act on the event */
+	$("#cvs").attr('color', 'black');
+});
 $(window).resize(function() {
 	if ($(window).width() >= 575){
 		$("#navBarG").show();
