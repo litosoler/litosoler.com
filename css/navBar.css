@@ -3,23 +3,23 @@
     background-color: rgba(255,255,255, 0.95);
 }
 
-ul{
+#navBar ul{
 	list-style-type: none;
 	margin: 0;
     padding: 0;
     overflow: hidden;
-}
-li{
+} 
+#navBar li{
 	float: left;
 }
-li a{
+#navBar li a{
 	display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover, li a:focus{
+#navBar li a:hover, #navBar li a:focus{
     text-decoration: none;
     color          : white;
 }
@@ -27,7 +27,7 @@ li a:hover, li a:focus{
 #cv:focus{
     color:black;
 }
-li a:hover:not(.active) {
+#navBar li a:hover:not(.active) {
     background-color: rgba(86, 177, 191, 0.8);
 }
 .hover{
@@ -38,7 +38,7 @@ li a:hover:not(.active) {
     color: white;
 }
 
-li > img{
+#navBar li > img{
     width: 100px;
     height: 70px;
 }
@@ -56,33 +56,73 @@ li > img{
     z-index         : 2;
 }  
 .float-right{
-   float: right;
+ float: right;
 }
 #icono-9{
-   width     : 40px;
-   height    : 40px;
-   margin-top: 19px;
+ width     : 40px;
+ height    : 40px;
+ margin-top: 19px;
 }
 #close-icon{
-   width   : 15px;
-   height  : 15px;
-   float   : right;
-   position: relative;
-   top     : 14px;
-   right   : 0px;
+ width   : 15px;
+ height  : 15px;
+ float   : right;
+ position: relative;
+ top     : 14px;
+ right   : 0px;
 }
 .boton:active{
-   transform: perspective(600px) translateZ(-75px) rotateZ(-0.5deg) rotateX(-10deg); /* Creo el efecto de hundimiento para el botón */
+ transform: perspective(600px) translateZ(-75px) rotateZ(-0.5deg) rotateX(-10deg); /* Creo el efecto de hundimiento para el botón */
 
 }
-
+/*fin navBar*/
 /*footer*/
 footer{
+    color: white;
+    padding: 20px 0 0 0;
     margin-top      : 300px;
-    height          : 100px;
-    width           : 100%;
-    background-color: rgba(17, 17, 17, 0.5);    
+    background-color: rgb(8, 112, 138);    
 }
+
+footer li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+footer li a:hover, footer li a:focus{
+    text-decoration: none;
+    color          : black;
+}
+
+
+@media (min-width: 660px){
+#logo-footer{
+    max-width: 190px;
+}
+}
+/*fin footer*/
+
+/*boton volver al inicio*/
+#top-btn {
+    display         : none; /* Hidden by default */
+    position        : fixed; /* Fixed/sticky position */
+    bottom          : 0px; /* Place the button at the bottom of the page */
+    right           : 0px; /* Place the button 30px from the right */
+    z-index         : 99; /* Make sure it does not overlap */
+    border          : none; /* Remove borders */
+    outline         : none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color           : white; /* Text color */
+    cursor          : pointer; /* Add a mouse pointer on hover */
+    padding         : 12px 15px; /* Some padding */
+}
+
+#top-btn:hover {
+    background-color: rgba(17, 17, 17, 1);
+    color: white;
+}
+/*fin boton volver al inicio*/
+
 /*dispositivos pequeños*/
 @media (max-width: 575px) {
     .sideBar{
@@ -103,4 +143,7 @@ footer{
     #navBarG ul li:last-child{
         float: none!important;
     }   
+    #logo-footer{
+    max-width: 190px;
+    }
 }
