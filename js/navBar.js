@@ -12,21 +12,17 @@ function abrir(){
 	$(".sideBar").show();
 }
 
-// $("#navBarG").on("click", "li a",function(){
-// 	var id = $(this).attr('id');
+$("#navBarG").on("click", "li a",function(){
+	var id = $(this).attr('id');
 
-// 	if (!(id == "cv")){
-// 	$("li a").removeClass("active");
-// 	$(this).addClass("active");
-// 	}
+	if (!(id == "cv")){
+		scroll("#"+id);
+	}
 
 
-// });
-
-$("#cv").focusin(function(event) {
-	/* Act on the event */
-	$("#cvs").attr('color', 'black');
 });
+
+
 $(window).resize(function() {
 	if ($(window).width() >= 575){
 		$("#navBarG").show();
@@ -47,6 +43,13 @@ function scrollFunction() {
 	} else {
 		document.getElementById("top-btn").style.display = "none";
 	}
+}
+
+function scroll(elemento){
+	alert($(elemento + 1 ).position().top);
+	$('html,body').animate({
+		scrollTop: $(elemento+1).offset().top
+	}, 1000);	
 }
 
 // When the user clicks on the button, scroll to the top of the document

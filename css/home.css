@@ -74,12 +74,13 @@ h5{
     margin-bottom: 15px;
 }
 .progress-bar{
-        background-color: rgba(8,112 ,138, 0.9)
+    background-color: rgba(8,112 ,138, 0.9)
 }
 
 /*para la seccion de contactame*/
-#contact{
-        padding: 0px 0px 20px 0px;
+#contact1{
+    margin-top: 20px;
+    padding: 0px 0px 20px 0px;
 }
 
 .img-form{
