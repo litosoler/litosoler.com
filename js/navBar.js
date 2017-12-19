@@ -42,17 +42,18 @@ $(window).resize(function() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("top-btn").style.display = "block";
-    } else {
-        document.getElementById("top-btn").style.display = "none";
-    }
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		document.getElementById("top-btn").style.display = "block";
+	} else {
+		document.getElementById("top-btn").style.display = "none";
+	}
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	$('html,body').animate({
+		scrollTop: 0
+	}, 1000);
 }
 // fin boton volver al inicio
 
@@ -61,7 +62,7 @@ function topFunction() {
 function alineacionV(selectorPadre, selectorHijo){
 	var marginTop = ($(selectorPadre).outerHeight() - $(selectorHijo).outerHeight() - 30 ) / 2; 
 	if($(selectorPadre).outerWidth() >= 575){
-	$(selectorHijo).css('margin-top', marginTop );
+		$(selectorHijo).css('margin-top', marginTop );
 	}else{
 		$(selectorHijo).css('margin-top', 0 );
 	}
