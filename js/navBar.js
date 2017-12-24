@@ -46,7 +46,6 @@ function scrollFunction() {
 }
 
 function scroll(elemento){
-	alert($(elemento + 1 ).position().top);
 	$('html,body').animate({
 		scrollTop: $(elemento+1).offset().top
 	}, 1000);	

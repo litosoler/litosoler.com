@@ -19,9 +19,13 @@
     padding: 14px 16px;
     text-decoration: none;
 }
-#navBar li a:hover, #navBar li a:focus{
+#navBar li a:hover{
     text-decoration: none;
     color          : white;
+}
+
+#navBar li a:focus{
+    color: black;
 }
 
 #cv:focus{
@@ -74,6 +78,15 @@
 .boton:active{
  transform: perspective(600px) translateZ(-75px) rotateZ(-0.5deg) rotateX(-10deg); /* Creo el efecto de hundimiento para el botón */
 
+}
+
+.desactivado{
+    cursor: not-allowed;
+}
+
+.desactivado:hover{
+    background-color: rgba(255,255,255, 0) !important;
+    color: black !important;
 }
 /*fin navBar*/
 /*footer*/

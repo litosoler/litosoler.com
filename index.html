@@ -14,188 +14,186 @@
   <link rel="stylesheet" type="text/css" href="css/navBar.css">
 </head>
 <body>
-  <header class="bg bg-img">
-    <section id="navBar">
-      <!-- capa cuando se abre el side bar en pantallas pequeñas -->
-      <div class="capa" onclick="cerrar()" title="close side menu" id="capa"></div>
-      <!-- sideBar/navBar-grande -->
-      <nav id="navBarG" class="container sideBar">
-        <ul>
-          <li><img src="img/logo.png"><img id="close-icon" src="img/glyphicons-198-remove-circle.png" class="hidden-sm-up" onclick="cerrar()" ></li>
-          <li><a class="active" href="#">Home</a></li>
-          <li><a id="about" href="#about">About</a></li>
-          <li><a id="contact" href="#contact">Contact</a></li>
-          <li><a href="#" >Portfolio</a></li>
-          <li class="float-right boton"><a id="cv" href="#">CV<img src="img/glyphicons-213-arrow-down.png"></a></li>
-        </ul>
-      </nav>
-      <!-- navBar en pantallas pequeñas -->
-      <nav id="navBarP" class="container-fluid hidden-sm-up">
-       <ul>
-        <li><img src="img/logo.png"></li>
-        <li class="float-right"><img id="icono-9" class="img-fluid" src="img/9.png" onclick="abrir()"></li>
+<header class="bg bg-img">
+  <section id="navBar">
+   <!-- capa cuando se abre el side bar en pantallas pequeñas -->
+   <div class="capa" onclick="cerrar()" title="close side menu" id="capa"></div>
+    <!-- sideBar/navBar-grande -->
+    <nav id="navBarG" class="container sideBar">
+      <ul>
+        <li><img src="img/logo.png"><img id="close-icon" src="img/glyphicons-198-remove-circle.png" class="hidden-sm-up" onclick="cerrar()" ></li>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a id="about" href="#about">About</a></li>
+        <li><a id="contact" href="#contact" class="desactivado">Contact</a></li>
+        <li><a href="#" class="desactivado" >Portfolio</a></li>
+        <li class="float-right boton"><a id="cv" href="docs/LitoSoler-CV.pdf" target="_blank">CV<img src="img/glyphicons-213-arrow-down.png"></a></li>
       </ul>
+    </nav>
+    <!-- navBar en pantallas pequeñas -->
+    <nav id="navBarP" class="container-fluid hidden-sm-up">
+     <ul>
+      <li><img src="img/logo.png"></li>
+      <li class="float-right"><img id="icono-9" class="img-fluid" src="img/9.png" onclick="abrir()"></li>
+     </ul>
     </nav>  
-   </section>
-    <div id="saludo">
+  </section>
+  <div id="saludo">
     <p>Hola<span>!</span></p>
     <p>Soy estudiante de <span>Ingieneria en Sistemas</span> en la Universidad Nacional Autonoma de Honduras.</p>
-   </div>
-  </header>
+  </div>
+</header>
 
-  <section id="about1">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-5">
-          <div class="white sombra">
-            <div id="perfil">
-             <p id="nombre">Lito Soler</p>
-             <ul>
-               <li>Estudiante de Ingienería en Sistemas</li>
-               <li>Tegucigalpa, Honduras</li>
-               <li>lito.soler1@gmail.com </li>
-             </ul>
-           </div> 
-           <hr>
-           <div id="habilidades">
-            <center><p>Habilidades</p></center>
-            <div class="grupo">
-              <p>C++</p>
-              <div class="progress">
-                <div class="progress-bar" style="width:50%">50%</div>
-              </div>
+<section id="about1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="white sombra">
+          <div id="perfil">
+           <p id="nombre">Lito Soler</p>
+           <ul>
+             <li>Estudiante de Ingienería en Sistemas</li>
+             <li>Tegucigalpa, Honduras</li>
+             <li>lito.soler1@gmail.com </li>
+           </ul>
+         </div> 
+         <hr>
+         <div id="habilidades">
+          <center><p>Habilidades</p></center>
+          <div class="grupo">
+            <p>C++</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:50%">50%</div>
             </div>
-            <div class="grupo">
-              <p>SQL</p>
-              <div class="progress">
-                <div class="progress-bar" style="width:50%">50%</div>
-              </div>
+          </div>
+          <div class="grupo">
+            <p>SQL</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:50%">50%</div>
             </div>
-            <div class="grupo">
-              <p>PHP</p>
-              <div class="progress">
-                <div class="progress-bar" style="width:50%">50%</div>
-              </div>
+          </div>
+          <div class="grupo">
+            <p>PHP</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:50%">50%</div>
             </div>
-            <div class="grupo">
-              <p>Java</p>
-              <div class="progress">
-                <div class="progress-bar" style="width:60%">60%</div>
-              </div>
+          </div>
+          <div class="grupo">
+            <p>Java</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:60%">60%</div>
             </div>
-            <div class="grupo">
-              <p>HTML, CSS, JQUERY</p>
-              <div class="progress">
-                <div class="progress-bar" style="width:70%">70%</div>
-              </div>
+          </div>
+          <div class="grupo">
+            <p>HTML, CSS, JQUERY</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:70%">70%</div>
             </div>
-            <div class="grupo">
-              <p>Linux</p>
-              <div class="progress">
-                <div class="progress-bar" style="width:70%">70%</div>
-              </div>
+          </div>
+          <div class="grupo">
+            <p>Linux</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:70%">70%</div>
             </div>
-            <div class="grupo">
-              <p>Git-Github</p>
-              <div class="progress">
-                <div class="progress-bar" style="width:70%">70%</div>
-              </div>
+          </div>
+          <div class="grupo">
+            <p>Git-Github</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:70%">70%</div>
             </div>
+          </div>
+        </div>
+        <hr>
+        <div id="idiomas">
+          <center><p>Idiomas</p></center>
+          <div class="grupo">
+            <p>Español</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:100%">Nativo</div>
+            </div>
+          </div>
+          <div class="grupo">
+            <p>Ingles</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:65%">65%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-7">
+     <div class="row">
+      <div id="experiencia" class="col-12 ">
+        <div class="white sombra">
+          <center><p>Experiecia Laboral</p></center>
+          <div class="exp">
+            <h5>QA</h5>
+            <ul>
+              <li>Icoms Technologies</li>
+              <li>Julio-Agosto 2017</li>
+            </ul>
+            <p>Las actividades básicas que realizabamos consistian en hacer diferentes tipos de test manuales en las apps que estanban desarrollando, ademas usabamos herramientas como git, github y diferentes simuladores.</p>
           </div>
           <hr>
-          <div id="idiomas">
-            <center><p>Idiomas</p></center>
-            <div class="grupo">
-              <p>Español</p>
-              <div class="progress">
-                <div class="progress-bar" style="width:100%">Nativo</div>
-              </div>
-            </div>
-            <div class="grupo">
-              <p>Ingles</p>
-              <div class="progress">
-                <div class="progress-bar" style="width:65%">65%</div>
-              </div>
-            </div>
+          <div class="exp">
+            <h5>Misionero de Tiempo Completo</h5>
+            <ul>
+              <li>La Iglesia de Jesucristo de los Santos de los Ultimos Días</li>
+              <li>2012-2014</li>
+            </ul>
           </div>
-        </div>
-      </div>
-
-      <div class="col-sm-7">
-       <div class="row">
-        <div id="experiencia" class="col-12 ">
-          <div class="white sombra">
-            <center><p>Experiecia Laboral</p></center>
-            <div class="exp">
-              <h5>Experiencia Laboral</h5>
-              <ul>
-                <li>lugar</li>
-                <li>periodo</li>
-              </ul>
-              <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-            </div>
-            <hr></hr>
-            <div class="exp">
-              <h5>Experiencia Laboral</h5>
-              <ul>
-                <li>lugar</li>
-                <li>periodo</li>
-              </ul>
-              <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-            </div>
-            <hr></hr>
-            <div class="exp">
-              <h5>Experiencia Laboral</h5>
-              <ul>
-                <li>lugar</li>
-                <li>periodo</li>
-              </ul>
-              <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-            </div>
+          <hr></hr>
+          <div class="exp">
+            <h5>Asistente Legal</h5>
+            <ul>
+              <li>Bufete Jurídico José Lito Soler</li>
+              <li>2011-2012</li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div id="educacion" class="col-12">
-          <div class="white sombra"> 
-            <center><p>Educación</p></center>
-            <div class="exp">
-              <h5>Titulo Obtenido</h5>
-              <ul>
-                <li>Institucion</li>
-                <li>periodo</li>
-              </ul>
-            </div>
-            <hr></hr>
-            <div class="exp">
-              <h5>Titulo Obtenido</h5>
-              <ul>
-                <li>Institucion</li>
-                <li>periodo</li>
-              </ul>
-            </div>
-            <hr></hr>
-            <div class="exp">
-              <h5>Titulo Obtenido</h5>
-              <ul>
-                <li>Institucion</li>
-                <li>periodo</li>
-              </ul>
-            </div>
+          <hr>
+          <div class="exp">
+            <h5>Práctica Profesional</h5>
+            <ul>
+              <li>ENMLA</li>
+              <li>2010,2011</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div id="educacion" class="col-12">
+        <div class="white sombra"> 
+          <center><p>Educación</p></center>
+          <div class="exp">
+            <h5>Ingeniería en Sistemas</h5>
+            <ul>
+              <li>UNAH</li>
+              <li>2015-> en proceso </li>
+            </ul>
+          </div>
+          <hr></hr>
+          <div class="exp">
+            <h5>Maestro de Educación Primaria</h5>
+            <ul>
+              <li>ENMLA</li>
+              <li>2009-2011</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-  </section>
+  </div>
+  </div>
+  </div>
+</section>
 
-
-  <section id="contact1">
+<!-- seccion en progreso -->
+<!-- <section id="contact1">
     <div class="jumbotron">
       <center>
-      <h1>Contactame</h1>
-      <p>Si quieres usar un gestor de correo <a href="mailto:lito.soler1@gmail.com">Click Aqui!!</a></p>
+        <h1>Contactame</h1>
+        <p>Si quieres usar un gestor de correo <a href="mailto:lito.soler1@gmail.com">Click Aqui!!</a></p>
       </center>
     </div>
     <div class="container-fluid">
@@ -223,9 +221,9 @@
         </div>
       </div>
     </div>
-  </section>
+</section> -->
 
-  <footer>
+<footer>
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-4">
@@ -237,23 +235,23 @@
         <ul>
           <li><a href="https://www.w3schools.com/" target="_new">3wschool.com</a></li>
           <li><a href="https://education.github.com/pack" target="_new">github Education</a></li>
-          <!-- <li><a href="https://v4-alpha.getbootstrap.com/">Bootstrap</a></li>
-          <li><a href="https://jquery.com">jQuery</a></li>
-          <li><a href="https://wix.com">wix.com</a></li>
-          <li><a href="https://Tailorbrands.com">Tailorbrands.com</a></li>
-          <li><a href="https://canva.com">canva.com</a></li> -->
-        </ul>
-      </div>
-      <div class="col-sm-4">
-        <center><img id="logo-footer" src="img/logo.png" class="img-fluid" alt=""></center>
+            <!-- <li><a href="https://v4-alpha.getbootstrap.com/">Bootstrap</a></li>
+            <li><a href="https://jquery.com">jQuery</a></li>
+            <li><a href="https://wix.com">wix.com</a></li>
+            <li><a href="https://Tailorbrands.com">Tailorbrands.com</a></li>
+            <li><a href="https://canva.com">canva.com</a></li> -->
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <center><img id="logo-footer" src="img/logo.png" class="img-fluid" alt=""></center>
+        </div>
       </div>
     </div>
-  </div>
-  </footer>
+</footer>
 
 
-  <!-- fuera de flujo -->
-  <button onclick="topFunction()" id="top-btn" title="Volver al inicio" class="sombra">Inicio</button>
+<!-- fuera de flujo -->
+<button onclick="topFunction()" id="top-btn" title="Volver al inicio" class="sombra">Inicio</button>
 
 
 
