@@ -49,6 +49,7 @@ function scroll(elemento){
 	$('html,body').animate({
 		scrollTop: $(elemento+1).offset().top
 	}, 1000);	
+	cerrar();
 }
 
 // When the user clicks on the button, scroll to the top of the document

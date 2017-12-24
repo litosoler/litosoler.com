@@ -42,9 +42,10 @@
     color: white;
 }
 
-#navBar li > img{
-    width: 100px;
-    height: 70px;
+#logo-nav{
+    width: 130px;
+    height: 75px;
+
 }
 .capa{
     cursor          :pointer;
@@ -87,6 +88,31 @@
 .desactivado:hover{
     background-color: rgba(255,255,255, 0) !important;
     color: black !important;
+}
+
+/*dispositivos pequeños*/
+@media (max-width: 575px) {
+    .sideBar{
+        position        : fixed;
+        width           :60%;
+        height          : 100%;
+        z-index         :3;
+        display         : none;
+        background-color: rgba(255,255,255,1);
+    }
+    #navBarG li{
+        float: none;     
+    }
+    #navBarG ul li:first-child{
+        background-color: rgba(208, 211, 197, -12);
+        margin-bottom   : 30px;
+    } 
+    #navBarG ul li:last-child{
+        float: none !important;
+    }   
+    #logo-footer{
+    max-width: 190px;
+    }
 }
 /*fin navBar*/
 /*footer*/
@@ -136,27 +162,4 @@ footer li a:hover, footer li a:focus{
 }
 /*fin boton volver al inicio*/
 
-/*dispositivos pequeños*/
-@media (max-width: 575px) {
-    .sideBar{
-        position        : fixed;
-        width           :60%;
-        height          : 100%;
-        z-index         :3;
-        display         : none;
-        background-color: rgba(255,255,255,1);
-    }
-    .sideBar *{
-        float: none;     
-    }
-    #navBarG ul li:first-child{
-        background-color: rgba(208, 211, 197, -12);
-        margin-bottom   : 30px;
-    } 
-    #navBarG ul li:last-child{
-        float: none!important;
-    }   
-    #logo-footer{
-    max-width: 190px;
-    }
-}
+
