@@ -21,7 +21,7 @@ $(function(){
 // habilita el modal secreto
 $(".js-cuentaClicks").click(function(event) {
 	AumentarHomeClicks(estado);
-	if(estado.homeClicks == 5){
+	if(estado.homeClicks == 1){
 		$("#modal-secreto").modal("show"); 
 		estado.homeClicks = 0;
 	}
@@ -32,13 +32,17 @@ $("#boton-secreto").click(function(event) {
 	var pwd = $("#pwd").val();
 	
 	$.ajax({
-		url: '/php/main.php',
+		url: 'php/main.php',
 		type: 'GET',
-		dataType: 'html',
+		dataType: 'json',
 		data: {password: pwd},
 	})
-	.done(function(respuesta) {
-		alert(respuesta);
+	.done(function(result) {
+		if (result.acceso == 1) {
+			alert("1");
+		}else{
+			alert("0");
+		}
 	})
 	.fail(function() {
 		console.log("error");
