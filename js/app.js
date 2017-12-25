@@ -39,9 +39,10 @@ $("#boton-secreto").click(function(event) {
 	})
 	.done(function(result) {
 		if (result.acceso == 1) {
-			alert("1");
+			window.location.href = "yariela.php";
 		}else{
-			alert("0");
+			$("#pwd-alert").show();
+			$('#pwd').val("");
 		}
 	})
 	.fail(function() {

@@ -1,3 +1,13 @@
+<?php 
+   session_start();
+  if ( !array_key_exists("acceso", $_SESSION) ){
+    header("Location: index.html");
+  }
+
+  if ( $_SESSION['acceso'] == 0 ){
+    header("Location: index.html");
+  }
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,6 +21,7 @@
   <link rel="stylesheet" type="text/css" href="css/.css">
 </head>
 <body>
+  <div class="jumbotron">hola</div>
 
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"

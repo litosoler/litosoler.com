@@ -19,6 +19,10 @@
     display: inline-block;
 }
 
+.oculto{
+    display: none;
+}
+
 /*Esta parte hará la función de cargador mientras aparece el contenido*/
 .loading {
     background-image: url('../img/loading.gif');
