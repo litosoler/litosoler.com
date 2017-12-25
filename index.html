@@ -21,7 +21,7 @@
     <!-- sideBar/navBar-grande -->
     <nav id="navBarG" class="container sideBar">
       <ul>
-        <li><img id="logo-nav" src="img/logo.png"><img id="close-icon" src="img/glyphicons-198-remove-circle.png" class="hidden-sm-up" onclick="cerrar()" ></li>
+        <li><img id="logo-nav" src="img/logo.png" class="js-cuentaClicks"><img id="close-icon" src="img/glyphicons-198-remove-circle.png" class="hidden-sm-up" onclick="cerrar()" ></li>
         <li><a class="active" href="#">Home</a></li>
         <li><a id="about" href="#about">About</a></li>
         <li><a id="contact" href="#contact" class="desactivado hidden-xs-down">Contact</a></li>
@@ -32,7 +32,7 @@
     <!-- navBar en pantallas pequeñas -->
     <nav id="navBarP" class="container-fluid hidden-sm-up">
      <ul>
-      <li><img id="logo-nav" src="img/logo.png"></li>
+      <li><img id="logo-nav" src="img/logo.png" class="js-cuentaClicks"></li>
       <li class="float-right"><img id="icono-9" class="img-fluid" src="img/9.png" onclick="abrir()"></li>
      </ul>
     </nav>  
@@ -252,6 +252,34 @@
 
 <!-- fuera de flujo -->
 <button onclick="topFunction()" id="top-btn" title="Volver al inicio" class="sombra">Inicio</button>
+<!-- modal secreto -->
+ <div class="modal fade" id="modal-secreto">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form action="#">
+              <div class="form-group">
+                <h3>Hola Yariela!! :*</h3>
+              </div>
+              <div class="form-group">
+                <label for="pwd">Escribe tu contraseña</label>
+                <input type="password" id="pwd" class="form-control">
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-outline-primary" id="boton-secreto">Entrar</button>
+              </div>
+            </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 
 
 

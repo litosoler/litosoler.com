@@ -28,6 +28,15 @@
     height: 100%;
 }
 
-/*inicia clases para el navBar	*/
-
-/*finaliza clases para el navBar*/
+/*clases que sobreescriben bootstrap*/
+.modal-header{
+    border-bottom: none !important;
+    padding-bottom: 0px; 
+}
+.modal-body{
+    padding-top: 0px;
+}
+.modal-footer{
+    border-top: none !important;
+}
+/*fin clases para sobreescribir*/

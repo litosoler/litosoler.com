@@ -1,5 +1,5 @@
 //objetos de estado y objetos html
-estado = {homeClicks:1,}
+estado = {homeClicks:0,}
 
 
 //funciones para el manejo del estado
@@ -18,27 +18,34 @@ $(function(){
     },1000);
 });
 
-// bloque los elementos del nav que no estan Habilitados
-// $("header").on({
-// 	mouseenter: function(){
-// 		if( !($(this).html() === "Home")  && !($(this).html() === "+") ){
-// 			$(this).addClass("not-allowed")
-// 			$("#no-disponible").show();
-// 		}
-// 	}, 
-// 	mouseleave: function(){
-// 		$(this).removeClass("not-allowed")
-// 		$("#no-disponible").hide();
-// 	},
-// 	click: function(){
-// 		if( $(this).html() === "Home"){
-// 			//$("li a").removeClass("active");
-// 			//$(this).addClass("active");
-// 			AumentarHomeClicks(estado);
-// 			if(estado.homeClicks == 5){
-// 				$("#yariela").fadeIn(2000, "swing");	
-// 			}
-// 		}
-// 	}	
-// }, "li a");
+// habilita el modal secreto
+$(".js-cuentaClicks").click(function(event) {
+	AumentarHomeClicks(estado);
+	if(estado.homeClicks == 5){
+		$("#modal-secreto").modal("show"); 
+		estado.homeClicks = 0;
+	}
+});
 
+//despues de dar click en el boton de enviar del modal secreto.
+$("#boton-secreto").click(function(event) {
+	var pwd = $("#pwd").val();
+	
+	$.ajax({
+		url: '/php/main.php',
+		type: 'GET',
+		dataType: 'html',
+		data: {password: pwd},
+	})
+	.done(function(respuesta) {
+		alert(respuesta);
+	})
+	.fail(function() {
+		console.log("error");
+	})
+	.always(function() {
+		console.log("complete");
+	});
+	
+	
+});
