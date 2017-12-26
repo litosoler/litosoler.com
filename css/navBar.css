@@ -97,8 +97,13 @@
         width           :60%;
         height          : 100%;
         z-index         :3;
-        display         : none;
         background-color: rgba(255,255,255,1);
+    }
+    .ocultar{
+        display: none;
+    }
+    .mostrar{
+        display: block;
     }
     #navBarG li{
         float: none;     

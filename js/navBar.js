@@ -3,13 +3,13 @@ $(function(){
 });
 
 function cerrar() {
-	$(".sideBar").hide();
+	$(".sideBar").addClass('ocultar');
 	$("#capa").hide();
 }
 
 function abrir(){
 	$("#capa").show();
-	$(".sideBar").show();
+	$(".sideBar").removeClass('ocultar');
 }
 
 $("#navBarG").on("click", "li a",function(){
@@ -24,12 +24,6 @@ $("#navBarG").on("click", "li a",function(){
 
 
 $(window).resize(function() {
-	if ($(window).width() >= 575){
-		$("#navBarG").show();
-		$("#capa").hide();
-	}else{
-		cerrar();
-	}
 	alineacionV("#section1", "#logo-footer");
 });
 

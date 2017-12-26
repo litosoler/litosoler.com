@@ -30,6 +30,7 @@
     background-position: center;
     background-size: 30px;
     height: 100%;
+    display: none;
 }
 
 /*clases que sobreescriben bootstrap*/

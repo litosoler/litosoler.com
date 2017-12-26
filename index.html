@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="loading">
+<html lang="es" >
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -13,19 +13,20 @@
   <link rel="stylesheet" type="text/css" href="css/home.css">
   <link rel="stylesheet" type="text/css" href="css/navBar.css">
 </head>
-<body>
+<body class="loading">
 <header class="bg bg-img">
   <section id="navBar">
    <!-- capa cuando se abre el side bar en pantallas pequeñas -->
    <div class="capa" onclick="cerrar()" title="close side menu" id="capa"></div>
     <!-- sideBar/navBar-grande -->
-    <nav id="navBarG" class="container sideBar">
+    <nav id="navBarG" class="container sideBar ocultar">
       <ul>
         <li><img id="logo-nav" src="img/logo.png" class="js-cuentaClicks"><img id="close-icon" src="img/glyphicons-198-remove-circle.png" class="hidden-sm-up" onclick="cerrar()" ></li>
         <li><a class="active" href="#">Home</a></li>
         <li><a id="about" href="#about">About</a></li>
-        <li><a id="contact" href="#contact" class="desactivado hidden-xs-down">Contact</a></li>
-        <li><a href="#" class="desactivado hidden-xs-down" >Portfolio</a></li>
+        <!-- <li><a id="contact" href="#contact" class="desactivado hidden-xs-down">Contact</a></li> -->
+        <!-- <li><a href="#" class="desactivado hidden-xs-down" >Portfolio</a></li> -->
+        <li id="secreto"></li>
         <li class="float-right boton"><a id="cv" href="docs/LitoSoler-CV.pdf" target="_blank">CV<img src="img/glyphicons-213-arrow-down.png"></a></li>
       </ul>
     </nav>
@@ -315,8 +316,11 @@ crossorigin="anonymous"></script>
     contador++;
   }
 
-  autoMargin();
-  $('body').hide();
+  $(function(){
+  $('body').show();
+    autoMargin();
+  });
+    
   $(window).resize(function() {
     autoMargin();
   });
