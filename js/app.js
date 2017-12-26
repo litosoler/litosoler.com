@@ -8,15 +8,30 @@ function AumentarHomeClicks(estado){
 }
 
 //funcioens para el manejo del domm
+function renderNavItem(){
+	$("#secreto").html('<a href="yariela.html">Pagina Secreta</a>');
+}
 
 //funciones de accion
-$(function(){
-	// start up after 2sec no matter what
-    setTimeout(function(){
-    	$('html').removeClass("loading");
-    	$("body").show(600);
-    },1000);
-});
+//verifica si se ha iniciado session secreta
+$.ajax({
+		url: 'php/main.php',
+		type: 'GET',
+		dataType: 'json',
+		data: {opcion: '2'},
+	})
+	.done(function(result) {
+		if ( !(result.acceso == 0)) {
+			renderNavItem();
+		}
+	})
+	.fail(function(result) {
+		console.log("error");
+		console.log(result);
+	})
+	.always(function() {
+		console.log("complete");
+	});
 
 // habilita el modal secreto
 $(".js-cuentaClicks").click(function(event) {
@@ -35,11 +50,11 @@ $("#boton-secreto").click(function(event) {
 		url: 'php/main.php',
 		type: 'GET',
 		dataType: 'json',
-		data: {password: pwd},
+		data: {opcion: '1', password: pwd},
 	})
 	.done(function(result) {
 		if (result.acceso == 1) {
-			window.location.href = "yariela.php";
+			window.location.href = "yariela.html";
 		}else{
 			$("#pwd-alert").show();
 			$('#pwd').val("");

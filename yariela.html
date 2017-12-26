@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!-- personalizadas -->
+  <link rel="stylesheet" type="text/css" href="css/navBar.css">
+  <link rel="stylesheet" type="text/css" href="css/yariela.css">
+</head>
+<body>
+  
+    <section id="navBar">
+      <!-- capa cuando se abre el side bar en pantallas pequeñas -->
+      <div class="capa" onclick="cerrar()" title="close side menu" id="capa"></div>
+      <!-- sideBar/navBar-grande -->
+      <nav id="navBarG" class="container sideBar">
+        <ul>
+          <li><img id="logo-nav" src="img/logo.png" class="js-cuentaClicks"><img id="close-icon" src="img/glyphicons-198-remove-circle.png" class="hidden-sm-up" onclick="cerrar()" ></li>
+          <li><a  href="index.html">Home</a></li>
+          <li id="secreto" class="active"><a>Pagina Secreta</a></li>
+          <li class="float-right boton"><a id="cv" href="docs/LitoSoler-CV.pdf" target="_blank">CV<img src="img/glyphicons-213-arrow-down.png"></a></li>
+        </ul>
+      </nav>
+      <!-- navBar en pantallas pequeñas -->
+      <nav id="navBarP" class="container-fluid hidden-md-up">
+       <ul>
+          <li><img id="logo-nav" src="img/logo.png" class="js-cuentaClicks"></li>
+          <li class="float-right"><img id="icono-9" class="img-fluid" src="img/9.png" onclick="abrir()"></li>
+        </ul>
+      </nav>  
+    </section>
+
+  <!-- tarjetas -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class= "col-sm-4 ">
+        <div class="tarjeta">
+          <div>
+            <img src="./img/hoocked.jpg" >
+          </div>
+        </div>
+      </div>
+      <div class= "col-sm-4 ">
+        <div class="tarjeta">
+          <div>
+            <img src="img/juntos.jpg" >
+          </div>
+        </div>
+      </div>
+      <div class= "col-sm-4 ">
+        <div class="tarjeta">
+          <div>
+            <img src="./img/juntos1.jpg" >
+          </div>
+        </div>
+      </div>
+      <div class= "col-sm-4 ">
+        <div class="tarjeta">
+          <div>
+            <img src="./img/juntos2.jpg" >
+          </div>
+        </div>
+      </div>
+      <div class= "col-sm-4 ">
+        <div class="tarjeta">
+          <div>
+            <img src="./img/juntos3.jpg" >
+          </div>
+      </div>
+    </div>
+  </div><!-- fin de tarjetas -->
+
+
+
+
+
+  <!-- fuera de flujo -->
+  <!-- modal de bienvenida -->
+  <div class="modal fade" id="bienvenida">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form action="#">
+              <div class="form-group">
+                <h3>Hola Yariela!! :*</h3>
+              </div>
+              <div class="form-group">
+                <label for="pwd">Escribe tu contraseña</label>
+                <input type="password" id="pwd" class="form-control form-control-lg">
+              </div>
+              <div id="pwd-alert" class="alert alert-danger oculto">
+                <strong>Lo siento,</strong> contraseña incorrecta.
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-outline-primary" id="boton-secreto">Entrar</button>
+              </div>
+            </form>
+        </div>
+        
+      </div>
+    </div>
+  </div><!-- fin de modal de bienvenida -->
+
+
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/yariela.js"></script>
+  <script type="text/javascript" src="js/navBar.js"></script>
+</body>
+</html>
