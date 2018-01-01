@@ -13,27 +13,25 @@
 </head>
 <body>
   
-    <section id="navBar">
-      <!-- capa cuando se abre el side bar en pantallas pequeñas -->
-      <div class="capa" onclick="cerrar()" title="close side menu" id="capa"></div>
-      <!-- sideBar/navBar-grande -->
-      <nav id="navBarG" class="container sideBar">
-        <ul>
-          <li><img id="logo-nav" src="img/logo.png" class="js-cuentaClicks"><img id="close-icon" src="img/glyphicons-198-remove-circle.png" class="hidden-sm-up" onclick="cerrar()" ></li>
-          <li><a  href="index.html">Home</a></li>
-          <li id="secreto" class="active"><a>Pagina Secreta</a></li>
-          <li class="float-right boton"><a id="cv" href="docs/LitoSoler-CV.pdf" target="_blank">CV<img src="img/glyphicons-213-arrow-down.png"></a></li>
-        </ul>
-      </nav>
-      <!-- navBar en pantallas pequeñas -->
-      <nav id="navBarP" class="container-fluid hidden-md-up">
-       <ul>
-          <li><img id="logo-nav" src="img/logo.png" class="js-cuentaClicks"></li>
-          <li class="float-right"><img id="icono-9" class="img-fluid" src="img/9.png" onclick="abrir()"></li>
-        </ul>
-      </nav>  
-    </section>
-
+  <section id="navBar">
+   <!-- capa cuando se abre el side bar en pantallas pequeñas -->
+   <div class="capa" onclick="cerrar()" title="close side menu" id="capa"></div>
+    <!-- sideBar/navBar-grande -->
+    <nav id="navBarG" class="container sideBar ocultar">
+      <ul>
+        <li><img id="logo-nav" src="img/logo.png" class="js-cuentaClicks"><img id="close-icon" src="img/glyphicons-198-remove-circle.png" class="hidden-sm-up" onclick="cerrar()" ></li>
+        <li><a  href="#">Home</a></li>
+        <li><a id="about" href="#" class="active">Página Secreta</a></li>
+      </ul>
+    </nav>
+    <!-- navBar en pantallas pequeñas -->
+    <nav id="navBarP" class="container-fluid hidden-sm-up">
+     <ul>
+      <li><img id="logo-nav" src="img/logo.png" class="js-cuentaClicks"></li>
+      <li class="float-right"><img id="icono-9" class="img-fluid" src="img/9.png" onclick="abrir()"></li>
+     </ul>
+    </nav>  
+  </section>
   <!-- tarjetas -->
   <div class="container-fluid">
     <div class="row">
@@ -74,10 +72,6 @@
     </div>
   </div><!-- fin de tarjetas -->
 
-
-
-
-
   <!-- fuera de flujo -->
   <!-- modal de bienvenida -->
   <div class="modal fade" id="bienvenida">
@@ -90,21 +84,12 @@
           </button>
         </div>
         <div class="modal-body">
-            <form action="#">
-              <div class="form-group">
-                <h3>Hola Yariela!! :*</h3>
-              </div>
-              <div class="form-group">
-                <label for="pwd">Escribe tu contraseña</label>
-                <input type="password" id="pwd" class="form-control form-control-lg">
-              </div>
-              <div id="pwd-alert" class="alert alert-danger oculto">
-                <strong>Lo siento,</strong> contraseña incorrecta.
-              </div>
-              <div class="form-group">
-                <button type="button" class="btn btn-outline-primary" id="boton-secreto">Entrar</button>
-              </div>
-            </form>
+            <h2>Wuirra linda!!!!</h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/xxOviBI-8fc?start=6" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <p class="break-word">Holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.......</p>
+            <p>XD hey, wuirra, justo hace un año estaba comiendo carnita en tu casa para estas fechas....</p>
+            <p>Se que no te la vas a pasar igual de bien porque no vamos a poder ir a la playa XD pero te deseo lo mejor y que sigas cumpliendos muchos años mas!!! muchisimos, y que me invites a comer cuando te los celebren XD</p>
+            <p>Te Quiero Muchote :* </p>
         </div>
         
       </div>

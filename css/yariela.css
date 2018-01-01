@@ -8,3 +8,14 @@
     padding: 0px;
     margin-bottom: 20px;
 }
+
+.modal-header{
+	border-bottom: none;
+}
+
+.break-word{
+	word-wrap: break-word;
+}
+.modal-body h2{
+	margin-top: -20px;
+}

@@ -17,4 +17,14 @@ $.ajax({
 	console.log("complete");
 });//finn ajax
 
-//$("#bienvenida").modal("show"); 
+$("#bienvenida").modal("show"); 
+hola();
+
+function hola(){
+	var cadena = "a";
+
+	for (var i = 0; i < 100; i++) {
+		cadena = cadena + "a";
+	}
+	console.log(cadena);
+}
