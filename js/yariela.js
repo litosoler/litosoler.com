@@ -17,14 +17,45 @@ $.ajax({
 	console.log("complete");
 });//finn ajax
 
-$("#bienvenida").modal("show"); 
-hola();
 
-function hola(){
-	var cadena = "a";
-
-	for (var i = 0; i < 100; i++) {
-		cadena = cadena + "a";
+function abrirModal(){
+	if (verificarCumple()) {
+		$("#bienvenida").modal("show"); 
 	}
-	console.log(cadena);
 }
+
+//verifica la fecha
+function verificarCumple(){
+	var cumple = false;
+	var dt = new Date();
+
+	// Display the month, day, and year. getMonth() returns a 0-based number.
+	var month = dt.getMonth()+1;
+	var day = dt.getDate();
+	var year = dt.getFullYear();
+	
+	if (day == 4 && month == 1) {
+		cumple = true;
+	}
+
+	return cumple;
+}
+
+function elegirMensaje(){
+	topFunction();
+	var dt = new Date();
+
+	// Display the month, day, and year. getMonth() returns a 0-based number.
+	var day = dt.getDate();
+
+	if (day >= 4) {
+		$("#bienvenida").modal("show");
+	}else{
+		$("#bloqueado").modal("show");
+	}
+}
+
+//cuando la pagina este lista
+$(function(){
+	abrirModal(); 
+});

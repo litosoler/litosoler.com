@@ -8,6 +8,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <!-- personalizadas -->
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/navBar.css">
   <link rel="stylesheet" type="text/css" href="css/yariela.css">
 </head>
@@ -33,45 +34,74 @@
     </nav>  
   </section>
   <!-- tarjetas -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class= "col-sm-4 ">
-        <div class="tarjeta">
-          <div>
-            <img src="./img/hoocked.jpg" >
+  <section id="tarjetas">
+    <center><h1>Grandes Momentos!!</h1></center>
+    <div class="container-fluid">
+      <div class="row">
+        <div class= "col-sm-3">
+          <div class="tarjeta sombra">
+            <div>
+              <img src="./img/peque0.jpg" class="img-fluid" >
+            </div>
           </div>
         </div>
-      </div>
-      <div class= "col-sm-4 ">
-        <div class="tarjeta">
-          <div>
-            <img src="img/juntos.jpg" >
+        <div class= "col-sm-3 ">
+          <div class="tarjeta sombra">
+            <div>
+              <img src="img/normal.jpg" class="img-fluid" >
+            </div>
           </div>
         </div>
-      </div>
-      <div class= "col-sm-4 ">
-        <div class="tarjeta">
-          <div>
-            <img src="./img/juntos1.jpg" >
+        <div class= "col-sm-3 ">
+          <div class="tarjeta sombra">
+            <div>
+              <img src="./img/normal1.jpg" >
+            </div>
           </div>
         </div>
-      </div>
-      <div class= "col-sm-4 ">
-        <div class="tarjeta">
-          <div>
-            <img src="./img/juntos2.jpg" >
+        <div class= "col-sm-3 ">
+          <div class="tarjeta sombra">
+            <div>
+              <img src="./img/normal2.jpg" >
+            </div>
           </div>
         </div>
-      </div>
-      <div class= "col-sm-4 ">
-        <div class="tarjeta">
-          <div>
-            <img src="./img/juntos3.jpg" >
+        <div class= "col-sm-3 ">
+          <div class="tarjeta">
+            <div>
+              <img src="./img/normal3.jpg" >
+            </div>
           </div>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <h5>Acerca de esta página.</h5>
+          <p>Wuirra, aquí por los momentos solo iré subiendo fotos XD, pero cuando se me ocurra algo nuevo ahí lo iré añadiendo. TeQuieroMucho!!!</p>
+        </div>
+        <div class="col-sm-4">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="https://www.facebook.com/yariela.motino" target="_new">Facebook</a></li>
+            <li><a  href="#" onclick='elegirMensaje();'>Mensaje de Cumpleaños</a></li>
+            <!-- <li><a href="https://v4-alpha.getbootstrap.com/">Bootstrap</a></li>
+            <li><a href="https://jquery.com">jQuery</a></li>
+            <li><a href="https://wix.com">wix.com</a></li>
+            <li><a href="https://Tailorbrands.com">Tailorbrands.com</a></li>
+            <li><a href="https://canva.com">canva.com</a></li> -->
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <center><img id="logo-footer" src="img/logo.png" class="img-fluid" alt=""></center>
+        </div>
       </div>
     </div>
-  </div><!-- fin de tarjetas -->
-
+  </footer>
+  
   <!-- fuera de flujo -->
   <!-- modal de bienvenida -->
   <div class="modal fade" id="bienvenida">
@@ -79,22 +109,45 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
         </div>
         <div class="modal-body">
             <h2>Wuirra linda!!!!</h2>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/xxOviBI-8fc?start=6" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
             <p class="break-word">Holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.......</p>
             <p>XD hey, wuirra, justo hace un año estaba comiendo carnita en tu casa para estas fechas....</p>
-            <p>Se que no te la vas a pasar igual de bien porque no vamos a poder ir a la playa XD pero te deseo lo mejor y que sigas cumpliendos muchos años mas!!! muchisimos, y que me invites a comer cuando te los celebren XD</p>
+            <p>Se que no te la vas a pasar igual de bien porque no vamos a poder ir a la playa XD pero te deseo lo mejor y que sigas cumpliendos muchos años mas!!! muchisimos, y que me invites a comer cuando te los celebren XD.</p>
             <p>Te Quiero Muchote :* </p>
         </div>
         
       </div>
     </div>
   </div><!-- fin de modal de bienvenida -->
+
+  <!-- modal contenido bloqueado -->
+   <div class="modal fade" id="bloqueado">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5></h5>
+          <div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <center>
+            <img src="img/bloqueado.jpg" alt="Este contenido esta bloqueado" class="img-fluid">
+            <h3>XD este contenido va a estar disponible a partir de tu cumple wuirra :P!!! te quiero mucho!</h3>
+          </center>
+        </div>
+        
+      </div>
+    </div>
+  </div><!-- fin de modal contenido bloqueado -->
+  <!-- boton de volver al inicio -->
+  <button onclick="topFunction()" id="top-btn" title="Volver al inicio" class="sombra">Inicio</button>
 
 
 

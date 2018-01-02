@@ -19,3 +19,13 @@
 .modal-body h2{
 	margin-top: -20px;
 }
+#tarjetas center{
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+.modal-header div{
+	padding: 9px;
+    cursor: pointer;
+}
+
+#bloqueado 
