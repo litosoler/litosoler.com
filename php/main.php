@@ -2,7 +2,8 @@
 	session_start();
 	$opcion = $_GET['opcion'];
 	$salt = "f688db19a78e021f937cb1f95011df32";
-	$passwordCrifado = "5aea614e8d021103592bc096b63752b4";
+	$passwordCrifado = "8067d9c03cd0b0244ff1084c49521c55";
+
 
 	
 	switch ($opcion) {
@@ -33,6 +34,11 @@
 
 			echo json_encode($resultado);
 		break;
+
+		case '3':
+			$clave = md5($salt."WuirraLinda");
+			echo "contra: " . $clave;
+			break;
 	}
 
 ?>

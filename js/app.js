@@ -9,7 +9,7 @@ function AumentarHomeClicks(estado){
 
 //funcioens para el manejo del domm
 function renderNavItem(){
-	$("#secreto").html('<a href="yariela.html">Pagina Secreta</a>');
+	$("#secreto").html('<a href="yariela.html">Página Secreta</a>');
 }
 
 //funciones de accion
@@ -36,14 +36,15 @@ $.ajax({
 // habilita el modal secreto
 $(".js-cuentaClicks").click(function(event) {
 	AumentarHomeClicks(estado);
-	if(estado.homeClicks == 1){
+	if(estado.homeClicks == 5){
 		$("#modal-secreto").modal("show"); 
 		estado.homeClicks = 0;
 	}
 });
 
 //despues de dar click en el boton de enviar del modal secreto.
-$("#boton-secreto").click(function(event) {
+
+function validarForm(){
 	var pwd = $("#pwd").val();
 	
 	$.ajax({
@@ -66,6 +67,12 @@ $("#boton-secreto").click(function(event) {
 	.always(function() {
 		console.log("complete");
 	});
-	
-	
+}
+
+
+$("#boton-secreto").click(function(event) {	
+	validarForm();
+});
+$("form").submit(function(event) {
+	validarForm();
 });
